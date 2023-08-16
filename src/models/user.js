@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define("User", {
+  const User = sequelize.define("user", {
     name: DataTypes.STRING,
     username: DataTypes.STRING,
     email: DataTypes.STRING,
@@ -12,6 +12,8 @@ module.exports = (sequelize, DataTypes) => {
     accessToFiles: DataTypes.STRING,
     token: DataTypes.STRING,
     signature: DataTypes.STRING,
+  },{
+    tableName:'users'
   });
 
   User.associate = function (models) {

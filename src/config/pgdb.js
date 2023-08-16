@@ -7,6 +7,7 @@ module.exports = {
     "database": process.env.db_name,
     "host": process.env.db_host,
     "dialect": process.env.db_dialect,
+    "use_env_variable":false,
     "operatorsAliases": false
   },
   "test": {
